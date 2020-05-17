@@ -46,8 +46,7 @@ public class ZgadywanieLiczby2 {
     private static String answer() {
         Scanner scanner = new Scanner(System.in);
         String check = null;
-        boolean valid = false;
-        while(!valid){
+        while(true){
             check = scanner.nextLine();
             if("za duzo".equals(check)){
                 return check;
@@ -58,7 +57,6 @@ public class ZgadywanieLiczby2 {
             }
             System.out.println("Mozesz odpowiedz: za malo, za duzo, zgadles");
         }
-        return check;
     }
 }
 
